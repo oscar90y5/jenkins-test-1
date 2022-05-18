@@ -1,7 +1,12 @@
 
 class Calculator:
-    def add(self, a, b):
+    version = '1.0'
+
+    @staticmethod
+    def add(a, b):
         return a + b
 
-    def sub(self, a, b):
+    @staticmethod
+    def sub(a, b):
         return a - b
+
