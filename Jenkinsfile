@@ -4,6 +4,7 @@ remote.name = 'test'
 remote.host = 'pro-server'
 remote.user = 'test'
 remote.password = 'test'
+remote.allowAnyHosts = true
 
 pipeline {
   agent any
