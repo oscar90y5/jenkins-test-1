@@ -14,13 +14,5 @@ pipeline {
       remote.password = 'test'
       sshScript remote: remote, script: "deploy.sh"
     }
-    #stage('Deploy') {
-    #  when {
-    #    branch 'main'
-    #  }
-    #  steps {
-    #    sshScript remote: remote, script: "deploy.sh"
-    #  }
-    #}
   }
 }
