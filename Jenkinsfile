@@ -1,5 +1,10 @@
 pipeline {
   agent any
+  def remote = [:]
+  remote.name = 'test'
+  remote.host = 'pro-server'
+  remote.user = 'test'
+  remote.password = 'test'
   stages {
     stage('Test') {
       steps {
