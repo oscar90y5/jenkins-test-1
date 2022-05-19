@@ -18,7 +18,7 @@ pipeline {
         branch 'main'
       }
       steps {
-        sshCommand remote: remote, script: "./deploy.sh"
+        sshCommand remote: remote, command: "./deploy.sh"
       }
     }
   }
